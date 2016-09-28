@@ -64,8 +64,10 @@ public class MainActivity extends AppCompatActivity implements MainMenuFragment.
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Intent intent = new Intent(this,SettingsActivity.class);
-            startActivity(intent);
+            getFragmentManager().beginTransaction()
+                    .replace(android.R.id.content, new SettingsFragment())
+                    .addToBackStack("preferences")
+                    .commit();
             return true;
         }
 

@@ -120,8 +120,10 @@ public class PDFActivity extends AppCompatActivity {
         switch (id)
         {
             case R.id.action_settings:
-                Intent intent = new Intent(this,SettingsActivity.class);
-                startActivity(intent);
+                getFragmentManager().beginTransaction()
+                        .replace(android.R.id.content, new SettingsFragment())
+                        .addToBackStack("preferences")
+                        .commit();
                 break;
 
             case R.id.action_jumppage:

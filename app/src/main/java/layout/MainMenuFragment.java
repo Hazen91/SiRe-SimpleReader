@@ -55,8 +55,6 @@ public class MainMenuFragment extends Fragment {
     {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
 
-
-
         Button openfile = (Button) view.findViewById(R.id.ButtonOpenFile);
         openfile.setOnClickListener(new View.OnClickListener() {
             @Override
