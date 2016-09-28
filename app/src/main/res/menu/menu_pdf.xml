@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="hasse.s.sire_simplereader.MainActivity"
+    >
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_jumppage"
+        android:icon="@drawable/ic_wrap_text_white_24px"
+        android:title="Jump to page"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/action_restorePage"
+        android:icon="@drawable/ic_restore_page_white_24px"
+        android:title="Open last viewed page"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/action_keepZoom"
+        android:checkable="true"
+        android:checked="true"
+        android:title="Keep zoomlevel"
+        app:showAsAction="never"
+        />
+</menu>

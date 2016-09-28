@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="2dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="2dp"
+    tools:context="hasse.s.sire_simplereader.PDFActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/image"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:contentDescription="@string/imageview_contentDescription"
+        />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/buttonnext"
+        android:layout_alignEnd="@+id/image"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_marginRight="-5dp"
+        android:visibility="visible" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/previous"
+        android:layout_alignTop="@+id/image"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="-10dp"
+        android:visibility="visible" />
+
+</RelativeLayout>
